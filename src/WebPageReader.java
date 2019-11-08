@@ -6,11 +6,11 @@ public class WebPageReader {
 	public static void main(String[] args) {		
 		try{
 			int n=-1;
-			URL url=new URL("https://www.baidu.com/");   
+			URL url=new URL("https://www.pintia.cn/");   
 			   
 			byte[] b = new byte[112];
 			StringBuffer area = new StringBuffer();
-			InputStream in = url.openStream();   //inÎªÊäÈëÁ÷£¬Ö¸ÏòURL¶ÔÏóËù°üº¬µÄ×ÊÔ´¡£
+			InputStream in = url.openStream();   //inä¸ºè¾“å…¥æµï¼ŒæŒ‡å‘URLå¯¹è±¡æ‰€åŒ…å«çš„èµ„æºã€‚
 			while((n=in.read(b))!= -1){
 			      String s= new String(b, 0, n);
 			      area.append(s+"\r\n");  			      
