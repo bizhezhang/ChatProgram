@@ -10,7 +10,7 @@ public class WebPageReader {
 			   
 			byte[] b = new byte[112];
 			StringBuffer area = new StringBuffer();
-			InputStream in = url.openStream();   //in为输入流，指向URL对象所包含的资源。
+			InputStream doinb = url.openStream();   //in为输入流，指向URL对象所包含的资源。
 			while((n=in.read(b))!= -1){
 			      String s= new String(b, 0, n);
 			      area.append(s+"\r\n");  			      
